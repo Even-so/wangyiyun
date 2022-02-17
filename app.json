@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/video/video",
+    "pages/personal/personal",
+    "pages/search/search",
+    "pages/login/login"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTitleText": "笑日葵音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#C31E04",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/images/tabs/wxb.png",
+        "selectedIconPath": "/static/images/tabs/wxb-red.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "播客",
+        "iconPath": "/static/images/tabs/Headphones.png",
+        "selectedIconPath": "/static/images/tabs/Headphones-red.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "/static/images/tabs/personal-center.png",
+        "selectedIconPath": "/static/images/tabs/personal-center-red.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "subPackages":[
+    {
+      "root":"songPackge",
+      "pages": [
+        "pages/recommendSong/recommendSong",
+        "pages/songDetail/songDetail"
+      ]
+      
+    }
+  ]
+}

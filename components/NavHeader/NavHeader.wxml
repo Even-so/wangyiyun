@@ -1,0 +1,7 @@
+<!-- 组件不会自动添加APP.json文件 -->
+<view class="recommendContainer">
+    <view class="header">
+    <text class="title">{{title}}</text>
+    <text class="more">{{nav}}</text>
+    </view>
+</view>
