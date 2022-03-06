@@ -1,22 +1,22 @@
-.songDetailContainer{
+.songDetailContainer {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-/* 底座 */
-.circle{
+
+.circle {
     position: relative;
     z-index: 100;
     width: 60rpx;
     height: 60rpx;
     border-radius: 50%;
-background: #fff;
-margin: 10rpx 0;
+    background: #fff;
+    margin: 10rpx 0;
 }
-/* 摇杆 */
-.needle{
+
+.needle {
     z-index: 99;
     position: relative;
     top: -40rpx;
@@ -27,37 +27,41 @@ margin: 10rpx 0;
     transform: rotate(-20deg);
     transition: transform 1s;
 }
-/* 摇杆动态 */
-.needleRotate{
+
+.needleRotate {
     transform: rotate(0deg);
 
 }
-/* 磁盘 */
-.discContainer{
+
+.discContainer {
     width: 598rpx;
     height: 598rpx;
     position: relative;
     top: -170rpx;
 }
-.disc{
+
+.disc {
     width: 598rpx;
     height: 598rpx;
 
 }
-.discAnimation{
+
+.discAnimation {
     animation: disc 10s linear infinite;
-    animation-delay:0.9s ;
+    animation-delay: 0.9s;
 }
+
 @keyframes disc {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
-/* 歌曲图片 */
-.musicImg{
+
+.musicImg {
     position: absolute;
     top: 0;
     right: 0;
@@ -68,29 +72,31 @@ margin: 10rpx 0;
     height: 370rpx;
     border-radius: 50%;
 }
-/* 底部播放控制 */
-.musicControl{
+
+.musicControl {
     width: 100%;
     display: flex;
     position: absolute;
     bottom: 40rpx;
     left: 0;
     border-top: 1rpx solid rgba(116, 114, 114, 0.705);
-    
+
 }
-.musicControl text{
-width: 20%;
-height: 120rpx;
-line-height: 120rpx;
-text-align: center;
-color: #fff;
-font-size: 50rpx;
+
+.musicControl text {
+    width: 20%;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 50rpx;
 }
-.musicControl .big{
+
+.musicControl .big {
     font-size: 80rpx;
 }
-/* 进度条 */
-.progressControl{
+
+.progressControl {
     position: absolute;
     bottom: 200rpx;
     width: 640rpx;
@@ -99,24 +105,26 @@ font-size: 50rpx;
     display: flex;
 }
 
-.barControl{
+.barControl {
     position: relative;
     width: 450rpx;
     height: 4rpx;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     margin: auto;
 
 }
-.audio-currentTime-Bar{
+
+.audio-currentTime-Bar {
     position: absolute;
     top: 0;
     left: 0;
-    /* width: 100rpx; */
+
     height: 4rpx;
     background-color: red;
     z-index: 1;
 }
-.audio-circle{
+
+.audio-circle {
     position: absolute;
     right: -12rpx;
     top: -4rpx;
